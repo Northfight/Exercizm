@@ -14,7 +14,7 @@ class Triangle
   end
  
   def scalene?
-    (a != b && b != c)&& valid?
+    (a != b && b != c) && valid?
   end
   
  private
