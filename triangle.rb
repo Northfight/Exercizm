@@ -6,20 +6,20 @@ class Triangle
   end	
  
   def equilateral?
-    (a == b && b == c) && is_triangle?
+    (a == b && b == c) && valid?
   end	
 
   def isosceles?
-    ((a == b) || (a == c) || (b == c )) && is_triangle?
+    ((a == b) || (a == c) || (b == c )) && valid?
   end
  
   def scalene?
-    (a != b && b != c)&& is_triangle?
+    (a != b && b != c)&& valid?
   end
   
  private
  
-  def is_triangle? 
+  def valid? 
     all_sides_present? && (b < a + c) && (c < a + b) && (a < b + c)
   end
 
