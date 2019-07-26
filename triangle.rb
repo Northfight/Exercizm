@@ -21,10 +21,10 @@ class Triangle
  private
  
   def is_triangle? 
-   is_zero? && (b < a + c) && (c < a + b) && (a < b + c)
+   all_sides_present? && (b < a + c) && (c < a + b) && (a < b + c)
   end
 
-  def more_than_zero?
+  def all_sides_present?
   	a > 0 && b > 0 && c > 0
   	
   end	
