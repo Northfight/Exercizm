@@ -21,7 +21,7 @@ class Triangle
  private
  
   def valid? 
-    all_sides_present? && (max_side < min_side + mid_side) 
+    all_sides_positive? && (max_side < min_side + mid_side) 
   end
 
   def all_sides_positive?
