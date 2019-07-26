@@ -6,7 +6,7 @@ class Triangle
   end	
  
   def equilateral?
-  	(a == b && b == c) && is_triangle?
+    (a == b && b == c) && is_triangle?
   end	
 
   def isosceles?
