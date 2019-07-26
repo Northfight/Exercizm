@@ -6,15 +6,14 @@ class Triangle
   end	
  
   def equilateral?
-    (a == b && b == c) && valid?
+    valid? && (a == b && b == c)
   end	
 
   def isosceles?
-    ((a == b) || (a == c) || (b == c )) && valid?
-  end
+    valid? && ((a == b) || (a == c) || (b == c )) 
  
   def scalene?
-    (a != b && b != c) && valid?
+    valid? && (a != b && b != c) 
   end
   
  private
