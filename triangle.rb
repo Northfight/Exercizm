@@ -25,7 +25,7 @@ class Triangle
   end
 
   def all_sides_positive?
-  	min_side > 0
+    min_side > 0
   end	
  	
 end
