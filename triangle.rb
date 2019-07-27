@@ -2,7 +2,7 @@ class Triangle
   attr_reader :min_side, :mid_side, :max_side
   
   def initialize(triangle)
-    @min_side,@mid_side,@max_side = triangle.sort
+    @min_side, @mid_side, @max_side = triangle.sort
   end	
  
   def equilateral?
@@ -10,11 +10,11 @@ class Triangle
   end	
 
   def isosceles?
-    valid? && ((min_side == mid_side) || (mid_side == max_side) || (max_side == min_side ))
+    valid? && ((min_side == mid_side) || (mid_side == max_side)) 
   end
  
   def scalene?
-    valid? && (min_side != mid_side && mid_side != max_side) 
+    valid? && !isosceles?
   end
   
  private
